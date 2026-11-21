@@ -1,4 +1,4 @@
-abstract class Floater
+class Floater
 {
   protected int corners;
   protected int[] xCorners;
@@ -11,8 +11,8 @@ abstract class Floater
   public void accelerate(double dAmount)
   {
     double dRadians = myPointDirection * (Math.PI / 180);
-    myXspeed += ((dAmount) * Math.cos(dRadians));
-    myYspeed += ((dAmount) * Math.sin(dRadians));
+    myXspeed += (dAmount) * Math.cos(dRadians);
+    myYspeed += (dAmount) * Math.sin(dRadians);
   }
 
   public void turn(double degreesOfRotation)
